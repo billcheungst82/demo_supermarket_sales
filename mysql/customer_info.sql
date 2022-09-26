@@ -1,0 +1,22 @@
+CREATE TABLE IF NOT EXISTS customer_info (
+	id INT NOT NULL AUTO_INCREMENT,
+    customer_id VARCHAR(40) NOT NULL,
+    customer_name VARCHAR(60),
+    market VARCHAR(40),
+    region VARCHAR(40),
+    state VARCHAR(40),
+	country VARCHAR(40),
+	city VARCHAR(40),    
+    order_date_first DATE,
+    order_date_last DATE,
+    ttl_spending DECIMAL(20,4),
+    ttl_order_cnt INT,
+    prev_30d_spending DECIMAL(20,4),
+    prev_90d_spending DECIMAL(20,4),
+    prev_365d_spending DECIMAL(20,4),
+    insert_by VARCHAR(100),
+	created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, 
+    updated_at TIMESTAMP ON UPDATE CURRENT_TIMESTAMP DEFAULT NULL,
+	PRIMARY KEY (id),
+    INDEX (customer_id)
+);

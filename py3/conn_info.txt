@@ -1,0 +1,7 @@
+{
+    "host" : "demo-db1.c0kvfimqbkbb.us-east-1.rds.amazonaws.com",
+    "port" : "3306",
+    "user" : "admin",
+    "password" : "########",    # madeup pw, please contact if needed
+    "database" : "demo_sales"
+}

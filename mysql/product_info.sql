@@ -1,0 +1,13 @@
+
+CREATE TABLE IF NOT EXISTS demo_sales.product_info (
+	id INT NOT NULL AUTO_INCREMENT,
+    product_id VARCHAR(40) NOT NULL,
+    product_name VARCHAR(500) NOT NULL,
+    segment VARCHAR(100) NOT NULL,
+    category VARCHAR(100) NOT NULL,
+    subcategory VARCHAR(100) NOT NULL,
+    unit_price DECIMAL(12,4) NOT NULL,
+	created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, 
+    updated_at TIMESTAMP NOT NULL ON UPDATE CURRENT_TIMESTAMP,
+	PRIMARY KEY (id)
+);
